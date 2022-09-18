@@ -44,7 +44,7 @@ public class CredService implements CredentialService{
     }
     public void showCredentials(Employee e,String department){
         System.out.println("Showing the credentials for " + e.getFirstName());
-        System.out.println("the password is ==>" + generatePassword());
-        System.out.println("the Email is ==>" + generateEmailAddress(e,department));
+        System.out.println("the password is ==> " + generatePassword());
+        System.out.println("the Email is ==> " + generateEmailAddress(e,department));
     }
 }
