@@ -32,19 +32,17 @@ public class CredService implements CredentialService{
 
         Collections.shuffle(list);
         for(char ch:list)s = s.concat(Character.toString(ch));
-
         return s;
-
-
     }
+    
     public String generateEmailAddress(Employee e, String department){
-
-        return e.getFirstName() + e.getLastName() + "@"+
+        return e.getFirstName().toLowerCase() + e.getLastName().toLowerCase() + "@"+
                 department + "." + companyName;
     }
+    
     public void showCredentials(Employee e,String department){
-        System.out.println("Showing the credentials for " + e.getFirstName());
-        System.out.println("the password is ==> " + generatePassword());
-        System.out.println("the Email is ==> " + generateEmailAddress(e,department));
+        System.out.println("Dear " + e.getFirstName() +" your generated credentials are as follows:");
+        System.out.println("Email    ==> " + generateEmailAddress(e,department));
+        System.out.println("password ==> " + generatePassword());
     }
 }
