@@ -14,12 +14,8 @@ public class Test {
 
         System.out.println("Welcome to " + cs.companyName);
         String firstName, lastName, option;
-        System.out.print("Please enter your First name: ");
-        firstName = sc.nextLine();
-        System.out.println(firstName);
-        System.out.print("Please enter your Last name: ");
-        lastName = sc.nextLine();
-        System.out.println(lastName);
+        firstName = "Arkadyuti";
+        lastName = "Sikdar";
         String[] departments = new String[]{"tech","adm","hr","lg"};
         System.out.print("Please enter the department from the following list:\n" +
                 "\t1. Technical\n" +
