@@ -9,7 +9,7 @@ import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 public class CredService implements CredentialService{
-    public String companyName = "arkaTech.com";
+    public String companyName = "arkatech.com";
     public String generatePassword(){
 
         String s = "";
